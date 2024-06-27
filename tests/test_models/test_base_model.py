@@ -6,7 +6,11 @@ import datetime
 from uuid import UUID
 import json
 import os
+from os import getenv
+from time import sleep
+import inspect
 
+storage_ty = getenv("HBNB_TYPE_STORAGE")
 
 class test_basemodel(unittest.TestCase):
     """ """
